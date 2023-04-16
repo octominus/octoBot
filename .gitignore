@@ -1,5 +1,12 @@
 # folders
 music/*
+spotify
+src/__pycache__/
 
 # files
 token.txt
+setup-env.sh
+.cache
+src/spotifyConfig.py
+src/hello.py
+src/extras/test-gpt-dl.py

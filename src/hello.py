@@ -13,7 +13,7 @@ with open('token.txt', 'r') as f: TOKEN = f.read()
 # ! Random muzik kodlari
 # comicFileNumber = len(os.listdir("pics/xkcd"))
 
-musicFolder = "sounds/music"
+musicFolder = "music"
 musicFile = ""
 musicFolderFile = ""
 musicFiles = os.listdir(musicFolder)
@@ -26,6 +26,7 @@ def randMusic():
     return music, randomMusic
 
 intents = discord.Intents.default()
+intents.message_content = True
 client = commands.Bot(command_prefix = 'o.', intents= intents)  # starts the discord client.
 
 @client.event  # event decorator/wrapper. More on decorators here: https://pythonprogramming.net/decorators-intermediate-python-tutorial/

@@ -1,0 +1,5 @@
+Spotipy
+unidecode
+ffmpeg
+ffmpeg-python
+youtube-dl
